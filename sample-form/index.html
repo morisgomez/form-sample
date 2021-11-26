@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+      <title> Survey Form </title> 
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+  <body>
+    <h1 id="title"> University of California, Los Angeles' Newsletter </h1>
+    <div id="container">
+          <p id="description"> Sign up for UCLA's new newsletter</p>
+          <form id="survey-form" action="URL for page on receiving end of information" method="get">
+            <div id="name">
+                  <label class="label" for="name-input"> Name </label> <br>
+                  <input id="name-input" type="text" placeholder="Enter Your Name" required> 
+            </div>
+                
+            <div id="email">
+                  <label class="label" for="emnail-input"> Email </label> <br>
+                  <input id="email-input" type="text" placeholder="Enter Your Email" required>
+            </div>
+            
+            <div id="age">
+                  <label class="label" for="age-input"> Age (Years)</label> <br>
+                  <input id="age-input" type="number" placeholder="Age" min="1" max="100" required>
+            </div>
+            
+            <div id="major">
+                  <label class="label" for="major-input"> What is your major?</label> 
+                  <br>
+                  <select name="major">   
+                  <option disabled> Choose major </option>
+                  <option value="International Development Studies"> International Development Studies </option>
+                  <option value="Education"> Education </option>
+                  <option value="Political Science"> Political Science </option>
+                  </select>
+            </div>
+            
+            <div id="ethnicity">
+                <p>
+                  <label class="label" for="ethnicity">Ethnicity</label> <br>
+                  <input id="ethnicity" type="checkbox" name="ethnicity" value="white"/> White <br>
+                  <input id="ethnicity" type="checkbox" name="ethnicity" value="Black"/> Black <br>
+                  <input id="ethnicity" type="checkbox" name="ethnicity" value="Latinx"/> Latinx <br>
+                  <input id="ethnicity" type="checkbox" name="Native American" value="white"/> Native American <br>
+                  <input id="ethnicity" type="checkbox" name="ethnicity" value="Other"/> Other <br>
+              </p>
+            </div>
+            
+            <div id="comments">
+                  <label class="label" for="comments-input"> Any comments or suggestions? </label> <br>
+                  <input id="comments-input" type="textarea" placeholder="Enter your comment here..." name="comments"/>
+            </div>
+            
+             <div id="submit">
+               <button id="submit-button" type="submit"> Submit </button> 
+            </div>
+        </form>
+    </div>
+ </body>
+</html>
